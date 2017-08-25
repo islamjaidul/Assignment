@@ -3,6 +3,10 @@
 @section('content')
     <div class="row">
         <div class="col-md-12">
+            
+            <h4>Edit User</h4>
+            <hr/>
+            
             <form action="{{ route('user.store', ['id' => $user->id]) }}" method="post">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -40,6 +44,9 @@
 <style>
     .help-block {
         color: #ff0000;
+    }
+    h4 {
+        color: gray;
     }
 </style>
 @endpush
